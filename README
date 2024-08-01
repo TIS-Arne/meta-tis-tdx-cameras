@@ -5,37 +5,49 @@ Please see the corresponding sections below for details.
 Dependencies
 ============
 
-  URI: <first dependency>
-  branch: <branch name>
-
-  URI: <second dependency>
-  branch: <branch name>
-
-  .
-  .
-  .
-
-Patches
-=======
-
-Please submit any patches against the meta-tis-tdx-cameras layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
-
-Table of Contents
-=================
-
-  I. Adding the meta-tis-tdx-cameras layer to your build
- II. Misc
+  URI: https://git.toradex.com/meta-toradex-bsp-common.git
+  branch: scarthgap-7.x.y
 
 
-I. Adding the meta-tis-tdx-cameras layer to your build
+Patches and Support
+===================
+
+Please direct support requests regarding this layer or The Imaging Source sensor
+modules to this email adress:
+
+support@theimagingsource.com
+
+Please submit any patches against the meta-tis-tdx-cameras layer to the maintainer:
+
+Maintainer: Arne Caspari <arne.caspari@theimagingsource.com>
+
+
+Adding the meta-tis-tdx-cameras layer to your build
 =================================================
 
 Run 'bitbake-layers add-layer meta-tis-tdx-cameras'
 
-II. Misc
-========
+Layer Description
+=================
 
---- replace with specific information about the meta-tis-tdx-cameras layer ---
+This layer contains the devicetree overlay files and kernel patches neccessary
+to use The Imaging Source MIPI sensor modules on Toradex SoMs.
+
+Supported Platforms
+===================
+
+This layer supports the following platforms:
+
+ - verdin-imx8mp
+
+
+Supported Sensor Modules
+========================
+
+This layer supports the following sensor modules:
+
+ - Dxx 36SX290
+ - Dxx 36SX462
+ - Dxx 36SX296
+ - Dxx 36SX297
+ - Dxx 36SR0521
